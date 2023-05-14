@@ -1,0 +1,34 @@
+[
+    {
+        "content": "AI Assistant",
+        "role": "system"
+    },
+    {
+        "role": "user",
+        "content": "denying it to another (e.g., an ill animal that needs to stay indoors).\\n\\nSome of the newest models use [[radio-frequency identification]] to electronically read a pet's [[Microchip implant (animal)|microchip implant]]. This removes the need for a cat to wear a collar, which could become lost. Other high-end doors use a key with RFID. The key is attached to the pet's collar, and the electric door only opens for the assigned keys.\\n\\n==Dog stiles==\\n[[File:Dog door demonstration - geograph.org.uk - 718920.jpg|thumb|left|A man lets a dog through the lift-up hatch at a stile in [[Medway]], [[England]].|247x247px]]\\nIn [[England]], [[Ireland]], and other areas with large numbers of livestock fences and walls in areas through which people walk on footpaths, [[stile]]s often have wooden, lift-up dog hatchways next to them, because dogs are not good at climbing stile steps and are often too heavy to lift over a fence.\\n\\n==Pet gates==\\nA related idea to the pet door is the pet gate, an easily human-operated portal that keeps pets in (or out) and thwarts their attempts to open it by using a thumb-operated switch or a smooth door handle, and which is tall enough that it cannot be jumped over by the type of pet for which it was designed. Styles vary, but they are typically made of wooden or metal bars or a wire lattice, and have adjustable widths so that they can be used to span arbitrary entrances, hallways or windows. Common uses are to keep pets inside while ventilating a room by opening an unscreened door, or keeping pets out of a baby's room or a dining area.{{clear|left}}\\n\\n==Pet barriers==\\nPet barriers are typically made of fabric and are especially used to secure staircases.<ref>{{cite web|last1=Woods|first1=Amanda|title=7 Important Measures to Pet Proof Your Home|url=https://medium.com/@woodsamanda399/7-important-measures-to-pet-proof-your-home-bdd3e33ae4c8|access-date=23 August 2017}}</ref> They are available in banister-to-banister and wall-to-banister options and are customizable and portable.\\n\\n== References ==\\n{{reflist}}\\n\\n{{Commons category|Pet doors}}\\n\\n[[Category:Door furniture]]\\n[[Category:Pet equipment]]"
+    },
+    {
+        "role": "user",
+        "content": "このwikipedia APIリクエスト結果を日本語に翻訳し、以下の回答例を参考に2階層の箇条書きで説明してください。\n\n※回答例※\n1. 項目名\n  - 説明書き～\n  - 説明書き2～\n2. 項目名\n  - 説明書き～\n  - 説明書き2～"
+    },
+    {
+        "role": "assistant",
+        "content": "1. ペットドアとは\n  - ペットたちが自分で建物に出入りできるようにする小さな開口部で、猫ドア、犬ドア、猫用ドア、犬用ドア、ペットドアなどとも呼ばれる。\n  - 近代的なペットドアは、ヒンジ付きのフラップや自動制御のものがあり、風や雨、大型の侵入者が住居に入ってくるのを防ぐ一定の保護を提供する。\n2. ペットドアの目的\n  - ペットオーナーにとって便利で、ペットが自由に出入りできるため、ペットを手動で外に出したり連れて行ったりする必要がなく、外に出たいと騒ぎ、ドアや壁を引っ掻いたり、（特に犬の場合）家の中で排泄するといった望ましくない行動を減らすことができる。\n  - 悪天候時にも、屋外に置いていたペットが無人で、安全に家に戻ることができる。\n3. ペットドアの特徴\n  - 一方向にしか開かないようにする調整可能なキャッチ機能がある。\n  - より高価なペットドアには、不十分なペットの安全性やアクセスの問題、断熱不良やドラフトなどの一般的な問題を解決するために、特定の素材、自動化、時制御デバイス、洗練されたセンサーを使用するものがある。\n4. ペットドアの歴史\n  - ペットドアの原型"
+    },
+    {
+        "role": "user",
+        "content": "続き"
+    },
+    {
+        "role": "assistant",
+        "content": "は古く、農村地域では、粒や小麦の保存スペースの壁、ドア、屋根に簡単な猫ドア（穴）があり、野良猫がこれらの保存スペースに寄生する害虫を狩るのに役立っていた。現代では、この機能はほとんど失われているが、スペインのバレンシア地方やフランスのヴォネージュ地方など、一部の農村地域では、農場の猫用のドアや穴が一般的である。\n\n5. 電子ペットドア\n  - 選択的アクセスを許すペットドアのいくつかのタイプが利用可能であり、シンプルなモデルよりも改良された耐候性と、野良猫や他の望ましくない動物に対する家のセキュリティが向上している。\n  - いくつかは、ペットの首輪に取り付けられた永久磁石を使用して、磁石が範囲内に入るとドアパネルを解錠するマッチング電磁機構を動作させる。\n  - いくつかの最新型は、ペットのマイクロチップを電子的に読み取るためにRFIDを使用する。これにより、猫が首輪を紛失することがなくなる。\n6. 犬用のスタイル\n  - 北アメリカの郊外地域で一般的であり、主にフェンスで囲まれた庭につながっている。\n  - ペットドアは、サブア"
+    },
+    {
+        "role": "user",
+        "content": "続き"
+    },
+    {
+        "role": "assistant",
+        "content": "ーマンのような標準的なドアに取り付けられ、犬が自由に出入りできるようになっている。\n  - 一方、イギリス、アイルランドなど、人々が徒歩で通る地面にたくさんの家畜の柵や壁がある地域では、スタイルには、スタイルの隣にある木製の犬用ハッチウェイがあり、犬がスタイル段差を上がるのが苦手で、柵を超えるのが重くて持ち上げられないためである。\n7. ペットゲート\n  - ペットゲートは、人間が簡単に操作できるポータルで、ペットを中に入れたり出したりし、親指操作スイッチやスムーズなドアハンドルを使用して開けることができ、設計されたペットのタイプによっては飛び越えることができないほどの高さがある。\n  - 一般的な用途は、スクリーンのないドアを開けて部屋を換気する際にペットを中に入れた状態にしておくこと、または赤ちゃんの部屋やダイニングエリアからペットを外に出すことである。\n8. ペットバリア\n  - ペットバリアは、特に階段を保護するための布製で、手すりから手すりへとした階段専用のものと、壁から手すりへとしたものがあり、カスタマイズ可能でポータブルである。"
+    }
+]

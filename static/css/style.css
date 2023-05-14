@@ -1,0 +1,276 @@
+html { font-size: 16px; }
+
+body {
+    font-family: "Meiryo", sans-serif;
+    background-color: #283246;
+    color: #f3f3f3;
+    overflow: auto;
+}
+
+#menu-container {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: end;
+    margin: auto;
+}
+
+#menu-form {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+}
+
+button#new, button#save, button#save-as {
+    font-size: 1rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #FFF;
+    background: #385e88;
+    border: solid 2px #284e78;
+}
+
+button#new:hover, button#save:hover, button#save-as:hover {
+    background-color: #32547e;
+    cursor: pointer;
+}
+
+label {
+    white-space: pre;
+}
+
+select#json-files {
+    width: 10rem;
+    font-family: "Meiryo", sans-serif;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+}
+
+#chat-container {
+    width: 90%;
+    height: calc(100vh - 240px);
+    margin: auto;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    font-family: "Meiryo", sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    width: 90%;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+textarea:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+.message-box {
+    white-space: pre-wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.user, .assistant, .system {
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user {
+    background-color: #f3f3f3;
+    color: #333333;
+    margin-left: auto;
+}
+
+.assistant {
+    background-color: #32547e;
+    color: #f3f3f3;
+}
+
+.system {
+    background-color: #333333;
+    color: #f3f3f3;
+    margin-left: auto;
+}
+
+.delete-button {
+    font-size: 0.8rem;
+    padding: 0px 6px;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    border: none;
+    margin: 0px 5px;
+    cursor: pointer;
+    align-items: center;
+    white-space: nowrap;
+    background-color: #ff8888;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+    cursor: pointer;
+}
+
+.message-box-options {
+    display: flex;
+    flex-direction: column;
+}
+
+label.token-label {
+    font-size: 1rem;
+}
+
+.move_delete {
+    display: flex;
+    flex-direction: row;
+}
+
+.drag-handle {
+    font-size: 0.8rem;
+    display: flex;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+#input-container {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: end;
+    margin: auto;
+}
+
+#input-row-1 {
+    display: flex;
+    padding: 5px;
+    align-items: end;
+    flex-direction: row;
+    width: 100%;
+}
+
+select#role {
+    font-family: "Meiryo", sans-serif;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+}
+
+textarea#content {
+    font-size: 1rem;
+    margin-right: 10px;
+    margin-left: 0px;
+    background-color: #f3f3f3;
+}
+
+button#send {
+    font-size: 1rem;
+    padding: 4px 10px;
+    color: #FFF;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    margin: 0px;
+    white-space: nowrap;
+    background: #fd9535;
+    border: solid 2px #d27d00;
+}
+
+button#send:hover {
+    background-color: #f27c00;
+    cursor: pointer;
+}
+
+#input-row-2 {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    margin: auto;
+}
+
+select#model-select {
+    font-family: "Meiryo", sans-serif;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+}
+
+label#total-tokens-label  {
+    font-size: 1rem;
+    margin-right: 5px;
+    min-width: 40rem;
+    text-align: end;
+}
+
+.slider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #283246;
+    margin: 5px;
+    align-items: end;
+}
+
+#settings-panel {
+    position: fixed;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: #283246;
+    border: 1px solid #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #3d5069;
+border-radius: 10px;
+}

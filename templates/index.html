@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenAI Chat Json Editor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="menu-container">
+        <div id="menu-form">
+            <button id="new">clear</button>
+            <button id="save-as">save as</button>
+            <button id="save">save</button>
+            <label for="json-files"></label>
+            <select id="json-files">
+                <option value="" selected hidden>history list</option>
+            </select>
+        </div>
+    </div>    <div id="chat-container">
+        <!-- ここにチャットのメッセージが追加されます -->
+    </div>
+    <div id="input-container">
+        <div id="input-row-1">
+            <select id="role" name="role">
+                <option value="user">User</option>
+                <option value="user(add only)">User(add only)</option>
+                <option value="assistant">AI</option>
+                <option value="system">System</option>
+            </select>
+            <textarea id="content" name="content" placeholder="メッセージを入力" rows="1"></textarea>
+            <button id="send" type="submit">⏎</button>
+        </div>
+        <div id="input-row-2">
+            <label id="model-select-label">model-setting: </label>
+            <select id="model-select">
+                <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                <option value="gpt-4">gpt-4</option>
+            </select>
+            <div id="settings-panel" style="display:none;">
+                <div class="slider-container">
+                    <label for="temperature-value">temperature(def:0.7): </label>
+                    <input type="number" id="temperature-value" min="0" max="2" step="0.01" value="0.7">
+                    <input type="range" id="temperature-slider" min="0" max="2" step="0.01" value="0.7">
+                </div>
+                <div class="slider-container">
+                    <label for="top_p-value">top_p(1.0): </label>
+                    <input type="number" id="top_p-value" min="0" max="1" step="0.01" value="1">
+                    <input type="range" id="top_p-slider" min="0" max="1" step="0.01" value="1">
+                </div>
+                <div class="slider-container">
+                    <label for="max_tokens-value">max_tokens(512): </label>
+                    <input type="number" id="max_tokens-value" min="1" max="2048" step="1" value="512">
+                    <input type="range" id="max_tokens-slider" min="1" max="2048" step="1" value="512">
+                </div>
+                <div class="slider-container">
+                    <label for="presence_penalty-value">presence_penalty(0): </label>
+                    <input type="number" id="presence_penalty-value" min="-2" max="2" step="0.01" value="0">
+                    <input type="range" id="presence_penalty-slider" min="-2" max="2" step="0.01" value="0">
+                </div>
+                <div class="slider-container">
+                    <label for="frequency_penalty-value">frequency_penalty(0): </label>
+                    <input type="number" id="frequency_penalty-value" min="-2" max="2" step="0.01" value="0">
+                    <input type="range" id="frequency_penalty-slider" min="-2" max="2" step="0.01" value="0">
+                </div>
+            </div>
+            <label id="total-tokens-label">-</label>
+        </div>
+    </div>
+</body>
+</html>
