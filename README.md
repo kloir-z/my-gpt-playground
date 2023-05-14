@@ -5,7 +5,7 @@ OpenAIのPlayground(Chat)に少し機能を追加したようなツールです(
 PythonもJavascriptも初めて触る素人が、GPT-4に聞きながら作成しました。  
 スパゲッティコードな気がしていますが関数はきちんと分け、関数名/変数名も分かりやすいので、分割しなくても読みやすいのでは、と思っています。  
 ※GitHubへのアップロードも、Gitの理解を兼ねて行っています。
-
+<img src="my-gpt-playground.gif" width="852">
 ## 主な機能
 
 - gpt-3.5-turbo、gpt-4とのチャット
