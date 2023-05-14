@@ -2,7 +2,8 @@
 
 ## 概要
 OpenAIのPlayground(Chat)に少し機能を追加したようなツールです(自由な保存/読込、参考トークン数表示)。  
-PythonもJavascriptも初めて触る素人が、GPT-4に聞きながら作成しました。  
+PythonもJavascriptもほぼ初めて触る素人が、GPT-4に聞きながら作成しました。  
+Python Flaskを使ってみようと作成を始めましたが、気づいたらJavascriptメインみたいになってしまいました。
 スパゲッティコードな気がしていますが関数はきちんと分け、関数名/変数名も分かりやすいので、分割しなくても読みやすいのでは、と思っています。  
 ※GitHubへのアップロードも、Gitの理解を兼ねて行っています。
 <img src="my-gpt-playground.gif" width="852">
