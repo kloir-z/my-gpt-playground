@@ -16,7 +16,7 @@ cancel_generation = {}
 
 #ChatGPT関連変数の初期化
 openai.api_key=os.environ["OPENAI_API_KEY"]
-model="gpt-3.5-turbo"
+model="gpt-3.5-turbo-16k-0613"
 system_setting = """
 AI Assistant
 """
@@ -25,7 +25,7 @@ temperature=0.7 #0.00 - 2.00 def 1 What sampling temperature to use, between 0 a
 top_p=1 #0.00 - 1.00 def 1 An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered. We generally recommend altering this or temperature but not both.
 stream=True #この一連のプログラムはTrueのみに対応。
 stop=None
-max_tokens=512
+max_tokens=2048
 presence_penalty=-0 # -2.00 - 2.00. def 0 Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.
 frequency_penalty=-0 # -2.00 - 2.00. def 0 Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.
 
@@ -62,15 +62,15 @@ def num_tokens_from_messages(messages, model=chat_completion_args['model']):
         print("Warning: model not found. Using cl100k_base encoding.")
         encoding = tiktoken.get_encoding("cl100k_base")
     if model == "gpt-3.5-turbo":
-        print("Warning: gpt-3.5-turbo may change over time. Returning num tokens assuming gpt-3.5-turbo-0301.")
-        return num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301")
+        print("Warning: gpt-3.5-turbo may change over time. Returning num tokens assuming gpt-3.5-turbo-0613.")
+        return num_tokens_from_messages(messages, model="gpt-3.5-turbo-0613")
     elif model == "gpt-4":
-        print("Warning: gpt-4 may change over time. Returning num tokens assuming gpt-4-0314.")
-        return num_tokens_from_messages(messages, model="gpt-4-0314")
-    elif model == "gpt-3.5-turbo-0301":
+        print("Warning: gpt-4 may change over time. Returning num tokens assuming gpt-4-0613.")
+        return num_tokens_from_messages(messages, model="gpt-4-0613")
+    elif model == "gpt-3.5-turbo-0613":
         tokens_per_message = 4  # every message follows <|start|>{role/name}\n{content}<|end|>\n
         tokens_per_name = -1  # if there's a name, the role is omitted
-    elif model == "gpt-4-0314":
+    elif model == "gpt-4-0613":
         tokens_per_message = 3
         tokens_per_name = 1
     else:

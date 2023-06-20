@@ -39,8 +39,9 @@
         <div id="input-row-2">
             <label id="model-select-label">model-setting: </label>
             <select id="model-select">
-                <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
-                <option value="gpt-4">gpt-4</option>
+                <option value="gpt-3.5-turbo-16k-0613">gpt-3.5-turbo-16k-0613</option>
+                <option value="gpt-3.5-turb-0613">gpt-3.5-turbo-0613</option>
+                <option value="gpt-4-0613">gpt-4-0613</option>
             </select>
             <div id="settings-panel" style="display:none;">
                 <div class="slider-container">
@@ -54,9 +55,9 @@
                     <input type="range" id="top_p-slider" min="0" max="1" step="0.01" value="1">
                 </div>
                 <div class="slider-container">
-                    <label for="max_tokens-value">max_tokens(512): </label>
-                    <input type="number" id="max_tokens-value" min="1" max="2048" step="1" value="512">
-                    <input type="range" id="max_tokens-slider" min="1" max="2048" step="1" value="512">
+                    <label for="max_tokens-value">max_tokens(2048): </label>
+                    <input type="number" id="max_tokens-value" min="1" max="2048" step="1" value="2048">
+                    <input type="range" id="max_tokens-slider" min="1" max="2048" step="1" value="2048">
                 </div>
                 <div class="slider-container">
                     <label for="presence_penalty-value">presence_penalty(0): </label>

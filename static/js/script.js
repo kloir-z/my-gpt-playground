@@ -233,8 +233,9 @@ $(document).ready(() => {
 
         function updateTotalTokensLabel(content_tokens, model) {
             const modelsMaxTokens = {
-                "gpt-3.5-turbo": 4096,
-                "gpt-4": 8192
+                "gpt-3.5-turbo-16k-0613": 16384,
+                "gpt-3.5-turbo-0613": 4096,
+                "gpt-4-0613": 8192
             };
             const modelMaxTokens = modelsMaxTokens[model];
 
@@ -613,7 +614,7 @@ $(document).ready(() => {
 
     resetSliderToDefault('temperature-slider', 'temperature-value', 0.7);
     resetSliderToDefault('top_p-slider', 'top_p-value', 1);
-    resetSliderToDefault('max_tokens-slider', 'max_tokens-value', 512);
+    resetSliderToDefault('max_tokens-slider', 'max_tokens-value', 2048);
     resetSliderToDefault('presence_penalty-slider', 'presence_penalty-value', 0);
     resetSliderToDefault('frequency_penalty-slider', 'frequency_penalty-value', 0);
 
